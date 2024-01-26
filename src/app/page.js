@@ -13,8 +13,8 @@ import mypic from "../../public/Profile-new-1.png"
 import Lakehead from "../../public/LakeheadIntl.png"
 import IPR from "../../public/IPR.png"
 import Verzeo from "../../public/Verzeo.png"
-import logo from "../../public/Logo (2).png"
-import logodark from "../../public/logo-dark(2).png"
+import logo from "../../public/Logo-2.png"
+import logodark from "../../public/logo-dark2.png"
 import elsevier from "../../public/elsevier.png"
 import useDownloader from "react-use-downloader";
 
@@ -22,7 +22,7 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [isNavExpand, setNavExpand] = useState(false);
   const {download} = useDownloader();
-  const fileUrl = "../../Yash Girishbhai Amethiya Resume.pdf"; 
+  const fileUrl = "../../Yash-Girishbhai-Amethiya-Resume.pdf"; 
   const filename = "Yash Girishbhai Amethiya Resume.pdf";
 
   return (
