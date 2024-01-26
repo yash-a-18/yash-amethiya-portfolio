@@ -30,59 +30,59 @@ export default function Home() {
       <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40" id="top">
 
         <section className="min-h-fit">
-            <nav className="py-10 mb-auto flex items-center justify-between dark:text-white">
-              <div className="flex items-center flex-shrink-0 dark:text-white mr-6 select-none">
-                <Image className="fill-current h-15 w-15 mr-2 dark:hidden" width="64" height="64"  src={logo} alt="Logo"/>
-                <Image className="hidden fill-current h-15 w-15 mr-2 dark:block" width="64" height="64"  src={logodark} alt="Dark Logo"/>
-                <span className="font-semibold text-xl tracking-tight">Yash Amethiya</span>
-                
-              </div>
-              <div className="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto" id="my_nav">
-                <div className="text-sm lg:flex-grow">
-                  <a href="#top" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
-                    Home
-                  </a>
-                  <a href="#Experience" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200  mr-4" >
-                    Experience
-                  </a>
-                  <a href="#Projects" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
-                    Projects
-                  </a>
-                  <a href="#Publication" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
-                    Publication
-                  </a>
-                  <a href="#Certificates" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
-                    Certificates
-                  </a>
-                  <a href="#Volunteering" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 ">
-                    Volunteering
-                  </a>
-                </div> 
-              </div>
+          <nav className="py-10 mb-auto flex items-center justify-between dark:text-white">
+            <div className="flex items-center flex-shrink-0 dark:text-white mr-4 sm:mr-6 lg:mr-6 md:mr-6 select-none">
+              <Image className="fill-current h-15 w-15 sm:mr-2 md:mr-2 lg:mr-2 dark:hidden" width="64" height="64"  src={logo} alt="Logo"/>
+              <Image className="hidden fill-current h-15 w-15 mr-2 dark:block" width="64" height="64"  src={logodark} alt="Dark Logo"/>
+              <span className="font-semibold text-xl tracking-tight">Yash Amethiya</span>
               
-              <ul className="flex items-center">
-                <li>
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl"
-                  />
-                </li>
-                <li>
-                  <a
-                    className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 select-none"
-                    onClick={() => download(fileUrl, filename)}
-                    href='#'
-                  >
-                    Resume
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            </div>
+            <div className="hidden w-full flex-grow lg:flex lg:items-center lg:w-auto" id="my_nav">
+              <div className="text-sm lg:flex-grow">
+                <a href="#top" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
+                  Home
+                </a>
+                <a href="#Experience" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200  mr-4" >
+                  Experience
+                </a>
+                <a href="#Projects" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
+                  Projects
+                </a>
+                <a href="#Publication" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
+                  Publication
+                </a>
+                <a href="#Certificates" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
+                  Certificates
+                </a>
+                <a href="#Volunteering" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 ">
+                  Volunteering
+                </a>
+              </div> 
+            </div>
+            
+            <ul className="flex items-center">
+              <li>
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-2xl"
+                />
+              </li>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-5 select-none sm:ml-8 lg:ml-8"
+                  onClick={() => download(fileUrl, filename)}
+                  href='#'
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
           <div className='flex items-center pb-10'>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hidden lg:block">
                 <Image className="object-cover" alt="Profile Photo" src={mypic} fill/>
             </div>
-            <div className="text-center pt-24 pb-10 mx-auto">
+            <div className="text-center pt-10 sm:pt-24 md:pt-24 lg:pt-24 pb-10 mx-auto">
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">
                 Yash Amethiya
               </h2>
@@ -130,6 +130,11 @@ export default function Home() {
               <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Java
+              </span>
+              </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              C++
               </span>
               </div>
               <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
@@ -806,7 +811,7 @@ export default function Home() {
                   Lakehead University International · January 2023 & September 2023
                   </p>
                   <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  Taught math to unprivileged children in a small village every weekend.
+                  I guided new international students at the university and assisted a group in meeting its goals. 
                   </p>
                 </div>
               </h2>
@@ -832,7 +837,7 @@ export default function Home() {
                   Rotaract Vadodara One-Anurakti · December 2019 - February 2020 
                   </p>
                   <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  I guided new international students at the university and assisted a group in meeting its goals. 
+                  Taught math to unprivileged children in a small village every weekend.
                   </p>
                 </div>
               </h2>
