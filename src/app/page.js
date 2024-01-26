@@ -80,7 +80,7 @@ export default function Home() {
             </nav>
           <div className='flex items-center pb-10'>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hidden lg:block">
-                <Image src={mypic} layout="fill" objectFit="cover" />
+                <Image className="object-cover" src={mypic} fill/>
             </div>
             <div className="text-center pt-24 pb-10 mx-auto">
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">
