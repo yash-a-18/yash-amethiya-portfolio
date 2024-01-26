@@ -32,8 +32,8 @@ export default function Home() {
         <section className="min-h-fit">
             <nav className="py-10 mb-auto flex items-center justify-between dark:text-white">
               <div className="flex items-center flex-shrink-0 dark:text-white mr-6 select-none">
-                <Image className="fill-current h-15 w-15 mr-2 dark:hidden" width="64" height="64"  src={logo}/>
-                <Image className="hidden fill-current h-15 w-15 mr-2 dark:block" width="64" height="64"  src={logodark}/>
+                <Image className="fill-current h-15 w-15 mr-2 dark:hidden" width="64" height="64"  src={logo} alt="Logo"/>
+                <Image className="hidden fill-current h-15 w-15 mr-2 dark:block" width="64" height="64"  src={logodark} alt="Dark Logo"/>
                 <span className="font-semibold text-xl tracking-tight">Yash Amethiya</span>
                 
               </div>
@@ -80,7 +80,7 @@ export default function Home() {
             </nav>
           <div className='flex items-center pb-10'>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hidden lg:block">
-                <Image className="object-cover" src={mypic} fill/>
+                <Image className="object-cover" alt="Profile Photo" src={mypic} fill/>
             </div>
             <div className="text-center pt-24 pb-10 mx-auto">
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400">
@@ -91,7 +91,7 @@ export default function Home() {
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I am always on the lookout for my next challenge and eager to connect with professionals. 
-              If you have any opportunities for data science you think I would be a good fit, don't hesitate to reach out.
+              If you have any opportunities for data science you think I would be a good fit, don&apos;t hesitate to reach out.
               </p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/yash-ga" target='_blank'>
@@ -337,7 +337,7 @@ export default function Home() {
           <div className="lg:flex gap-10 dark:text-white">
             <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content">
               <div width={300} height={100} className='mx-10'>
-                <Image src={Lakehead} />
+                <Image src={Lakehead} alt="LUIntl"/>
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-center ">
                 Peer Mentor <br/> Lakehead University International
@@ -384,7 +384,7 @@ export default function Home() {
                       Provided reliable information about Lakehead University and its resources
                     </li>
                     <li>
-                      Recorded student data and tracked mentees' progress on Excel
+                      Recorded student data and tracked mentees&apos; progress on Excel
                     </li>
                     <li>
                       Coordinated airport arrivals for incoming students in the fall
@@ -394,7 +394,7 @@ export default function Home() {
             </div>
             <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content">
               <div width={300} height={100} className='mx-10'>
-                <Image src={IPR} />
+                <Image src={IPR} alt="IPR"/>
               </div>
               <h3 className="text-center text-lg font-medium pt-8 pb-2 ">
                 Research and Project Intern <br/> Institute for Plasma Research
@@ -457,7 +457,7 @@ export default function Home() {
             </div>
             <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content">
               <div width={300} height={100} className='mx-10'>
-                <Image src={Verzeo} />
+                <Image src={Verzeo} alt="Verzeo"/>
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-center">
                 Machine Learning Intern <br/> Verzeo
@@ -549,7 +549,7 @@ export default function Home() {
                       Skills: Python, Long Short-Term Memory (LSTM), CheXNET Model
                     </p>
                     <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    Extracted the information from Indiana University's dataset, consisting of almost 7500 images and 4000 reports.
+                    Extracted the information from Indiana University&apos;s dataset, consisting of almost 7500 images and 4000 reports.
                     <br/>Organized the unbalanced by performing data pre-processing tasks like up-sampling and down-sampling.
                     <br/>Captured the semantic meaning & relationship between the words by using GloVe vectors with 300 dimensions.
                     <br/>Fine-tuned the CheXNET Model for encoding and achieved around 90% accuracy and a loss of less than 0.01.
@@ -617,7 +617,7 @@ export default function Home() {
                     <p className="text-base font-normal text-gray-500 dark:text-gray-400">
                     Developed a Multilayer Perceptron (MLP) from scratch, incorporating Backpropagation and Stochastic Gradient Descent with Momentum (SDGM) algorithms.
                     <br/>Attained a successful learning curve, demonstrating effective model training and optimization.
-                    <br/>Utilized parameters referenced from the paper 'The Discovery of Experts' Decision Rules from Qualitative Bankruptcy Data Using Genetic Algorithms' by Myoung-Jong Kim and Ingoo Han for an existing dataset.
+                    <br/>Utilized parameters referenced from the paper &apos;The Discovery of Experts&apos; Decision Rules from Qualitative Bankruptcy Data Using Genetic Algorithms&apos; by Myoung-Jong Kim and Ingoo Han for an existing dataset.
                     </p>
                 </li>
                 <li className="mb-10 ml-6">
@@ -675,7 +675,7 @@ export default function Home() {
             <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
               <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
                 <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden p-5" >
-                  <Image src={elsevier} />
+                  <Image src={elsevier} alt="Elsevier"/>
                 </div>
               </a>
               <div className="p-5">
@@ -819,7 +819,7 @@ export default function Home() {
                   Lakehead University · May 2023
                   </p>
                   <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  Help organize graduates by their platform card numbers and ensure they're ready to enter the auditorium 10 minutes before the ceremony starts, ensuring a seamless procession.
+                  Help organize graduates by their platform card numbers and ensure they&apos;re ready to enter the auditorium 10 minutes before the ceremony starts, ensuring a seamless procession.
                   </p>
                 </div>
               </h2>
@@ -850,7 +850,7 @@ export default function Home() {
                 <h2>
                   <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3 group-hover/content:border-none group-hover/content:pb-1">
                     <span className='text-lg'>
-                      Lakehead Makes Leader: There is no"I" in EDI Equity, Diversity, and Inclusion
+                      Lakehead Makes Leader: There is no&apos;I&apos; in EDI Equity, Diversity, and Inclusion
                     </span>
                     <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                       Issued by Lakehead University International · April 2023
