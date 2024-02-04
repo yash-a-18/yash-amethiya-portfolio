@@ -67,7 +67,7 @@ export default function Home() {
                   className="cursor-pointer text-2xl"
                 />
               </li>
-              <li>
+              <li className="hidden sm:block md:block lg:block">
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-5 select-none sm:ml-8 lg:ml-8"
                   onClick={() => download(fileUrl, filename)}
@@ -78,8 +78,13 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div>
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden md:h-96 md:w-96 block sm:hidden md:hidden lg:hidden">
+                <Image className="object-cover" alt="Profile Photo" src={mypic} fill/>
+              </div>
+          </div>
           <div className='flex items-center pb-10'>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hidden lg:block">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96 hidden sm:block md:block lg:block">
                 <Image className="object-cover" alt="Profile Photo" src={mypic} fill/>
             </div>
             <div className="text-center pt-10 sm:pt-24 md:pt-24 lg:pt-24 pb-10 mx-auto">
@@ -94,7 +99,7 @@ export default function Home() {
               If you have any opportunities for data science you think I would be a good fit, don&apos;t hesitate to reach out.
               </p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/yash-ga" target='_blank'>
+                <a href="https://www.linkedin.com/in/yash-ga" target='_blank'>
                   <AiFillLinkedin />
                 </a>
                 <a href='https://github.com/yash-a-18' target='_blank'>
@@ -103,6 +108,15 @@ export default function Home() {
                 <a href="mailto: yashamethiya2001@gmail.com">
                   <AiFillMail />
                 </a>
+              </div>
+              <div className="mt-7 block sm:hidden md:hidden lg:hidden">
+                <button
+                  className="w-full bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md select-none"
+                  onClick={() => download(fileUrl, filename)}
+                  href='#'
+                >
+                  Resume
+                </button>
               </div>
             </div>
           </div>
