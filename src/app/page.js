@@ -10,7 +10,8 @@ import {
 import { FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
 import mypic from "../../public/Profile-new-1.png"
-import Lakehead from "../../public/LakeheadIntl.png"
+import LakeheadIntl from "../../public/LakeheadIntl.png"
+import Lakehead from "../../public/lakehead.png"
 import IPR from "../../public/IPR.png"
 import Verzeo from "../../public/Verzeo.png"
 import logo from "../../public/Logo-2.png"
@@ -355,8 +356,56 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10 dark:text-white">
             <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div width={200} height={50} className='mx-10'>
+                <Image src={Lakehead} alt="LUCS" className='object-fill h-25 w-full'/>
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2 text-center ">
+                Teaching Assistant <br/> Lakehead University (Dept. of CS)
+              </h3>
+              <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                January 2024 - Present
+              </p>
+              <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+              <div className="group-hover/content:hidden  text-gray-800 dark:text-gray-400 ml-7">
+              <u><b>Gained Skills:</b></u>
+                <i><ul className="list-disc"> 
+                    <li>
+                      Programming Languages (C and C++)
+                    </li>
+                    <li>
+                      Instructional Design
+                    </li>
+                    <li>
+                      Teaching and Tutoring
+                    </li>
+                    <li>
+                      Classroom Management
+                    </li>
+                    <li>
+                      Assessment and Feedback
+                    </li>
+                    <li>
+                      Team Collaboration
+                    </li>
+                </ul></i>
+              </div>
+              <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-400 ml-7">
+                <ul className="list-disc"> 
+                    <li>
+                      Assisted in organizing and conducting C programming labs for a diverse group of 45 undergraduate students, resulting in improved understanding and application of coding concepts.
+                    </li>
+                    <li>
+                      Led C++ programming labs for approximately 70 undergrad students, offering individualized support to clarify doubts and enhance their coding abilities.
+                    </li>
+                    <li>
+                      Graded and provided feedback on lab assignments and exams for a class of 45 students, ensuring accuracy and fairness in assessment.
+                    </li>
+                  </ul>
+              </div>
+            </div>
+            <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
               <div width={300} height={100} className='mx-10'>
-                <Image src={Lakehead} alt="LUIntl"/>
+                <Image src={LakeheadIntl} alt="LUIntl" className='object-fill h-25 w-full'/>
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-center ">
                 Peer Mentor <br/> Lakehead University International
@@ -411,9 +460,11 @@ export default function Home() {
                   </ul>
               </div>
             </div>
-            <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
+          </div>
+          <div className="lg:flex gap-10 dark:text-white">
+          <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
               <div width={300} height={100} className='mx-10'>
-                <Image src={IPR} alt="IPR"/>
+                <Image src={IPR} alt="IPR" className='object-fill h-25 w-full'/>
               </div>
               <h3 className="text-center text-lg font-medium pt-8 pb-2 ">
                 Research and Project Intern <br/> Institute for Plasma Research
@@ -476,7 +527,7 @@ export default function Home() {
             </div>
             <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
               <div width={300} height={100} className='mx-10'>
-                <Image src={Verzeo} alt="Verzeo"/>
+                <Image src={Verzeo} alt="Verzeo" className='object-fill h-25 w-full'/>
               </div>
               <h3 className="text-lg font-medium pt-8 pb-2 text-center">
                 Machine Learning Intern <br/> Verzeo
@@ -540,6 +591,7 @@ export default function Home() {
                   </ul>
               </div>
             </div>
+
           </div>
         </section>
 
