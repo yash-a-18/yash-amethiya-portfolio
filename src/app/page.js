@@ -9,19 +9,18 @@ import {
 } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
-import mypic from "../../public/Profile-new-1.png"
-import LakeheadIntl from "../../public/LakeheadIntl.png"
-import Lakehead from "../../public/lakehead.png"
-import IPR from "../../public/IPR.png"
-import Verzeo from "../../public/Verzeo.png"
-import logo from "../../public/Logo-2.png"
-import logodark from "../../public/logo-dark2.png"
-import elsevier from "../../public/elsevier.png"
+import mypic from "../../public/Profile-new-1.png";
+import LakeheadIntl from "../../public/LakeheadIntl.png";
+import Lakehead from "../../public/LakeheadCS.png";
+import IPR from "../../public/IPR.png";
+import Verzeo from "../../public/Verzeo.png";
+import logo from "../../public/Logo-2.png";
+import logodark from "../../public/logo-dark2.png";
+import elsevier from "../../public/elsevier.png";
 import useDownloader from "react-use-downloader";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [isNavExpand, setNavExpand] = useState(false);
   const {download} = useDownloader();
   const fileUrl = "../../Yash-Girishbhai-Amethiya-Resume.pdf"; 
   const filename = "Yash Girishbhai Amethiya Resume.pdf";
