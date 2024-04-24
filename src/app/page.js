@@ -7,6 +7,7 @@ import {
   AiFillMail,
   AiFillGithub,
 } from "react-icons/ai";
+import { SiGooglescholar } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
 import mypic from "../../public/Profile-new-1.png";
@@ -17,10 +18,11 @@ import Verzeo from "../../public/Verzeo.png";
 import logo from "../../public/Logo-2.png";
 import logodark from "../../public/logo-dark2.png";
 import elsevier from "../../public/elsevier.png";
+import springer from "../../public/Springer.png";
 import useDownloader from "react-use-downloader";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const {download} = useDownloader();
   const fileUrl = "../../Yash-Girishbhai-Amethiya-Resume.pdf"; 
   const filename = "Yash Girishbhai Amethiya Resume.pdf";
@@ -48,8 +50,8 @@ export default function Home() {
                 <a href="#Projects" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
                   Projects
                 </a>
-                <a href="#Publication" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
-                  Publication
+                <a href="#Publications" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
+                  Publications
                 </a>
                 <a href="#Certificates" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
                   Certificates
@@ -92,22 +94,26 @@ export default function Home() {
                 Yash Amethiya
               </h2>
               <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-                Data Analyst and Scientist
+                Data Scientist
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I am always on the lookout for my next challenge and eager to connect with professionals. 
               If you have any opportunities for data science you think I would be a good fit, don&apos;t hesitate to reach out.
               </p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-                <a href="https://www.linkedin.com/in/yash-ga" target='_blank'>
+                <a href="https://www.linkedin.com/in/yash-ga" target='_blank' title='Linkedin'>
                   <AiFillLinkedin />
                 </a>
-                <a href='https://github.com/yash-a-18' target='_blank'>
+                <a href='https://github.com/yash-a-18' target='_blank' title='Github'>
                   <AiFillGithub />
                 </a>
-                <a href="mailto: yashamethiya2001@gmail.com">
+                <a href="mailto: yashamethiya2001@gmail.com" title='Email'>
                   <AiFillMail />
                 </a>
+                <a href="https://scholar.google.ca/citations?user=gJ4oeJEAAAAJ&hl=en" target='_blank' title='Scholar'>
+                  <SiGooglescholar />
+                </a>
+                
               </div>
               <div className="mt-7 block sm:hidden md:hidden lg:hidden">
                 <button
@@ -362,7 +368,7 @@ export default function Home() {
                 Teaching Assistant <br/> Lakehead University (Dept. of CS)
               </h3>
               <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                January 2024 - Present
+                January 2024 - April 2024
               </p>
               <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
               <div className="group-hover/content:hidden  text-gray-800 dark:text-gray-400 ml-7">
@@ -410,7 +416,7 @@ export default function Home() {
                 Peer Mentor <br/> Lakehead University International
               </h3>
               <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                July 2023 - Present
+                July 2023 - April 2024
               </p>
               <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
               <div className="group-hover/content:hidden  text-gray-800 dark:text-gray-400 ml-7">
@@ -737,10 +743,36 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10" id="Publication">
+        <section className="py-10" id="Publications">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Publication</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Publications</h3>
           </div>
+          <div className='py-5'>
+            <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
+                <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden p-5" >
+                  <Image src={springer} alt="Elsevier"/>
+                </div>
+              </a>
+              <div className="p-5">
+                <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Automatic Table Detection and Tabular Data Extraction from Scanned Documents
+                  </h5>
+                </a>
+                <p className="font-normal text-gray-700 dark:text-gray-400">
+                  Publication: Springer, Journal: Springer-Smart Innovation, Systems and Technologies (SIST)
+                </p>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  April 2024
+                </p>
+                <a href="#" className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Accepted
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className='py-5'>
             <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
               <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
@@ -758,7 +790,7 @@ export default function Home() {
                   Publication: Elsevier, Journal: Intelligent Medicine
                 </p>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  October 2021
+                  October 2022
                 </p>
                 <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank' className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Read more
@@ -883,6 +915,19 @@ export default function Home() {
               <h2>
                 <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3">
                   <span className='text-lg'>
+                  Student Ambassador - C2U Expo
+                  </span>
+                  <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  Lakehead University · June 2023
+                  </p>
+                  <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  Community-College-University Exposition at Lakehead University, helped with the presentation setup and being room volunteer.
+                  </p>
+                </div>
+              </h2>
+              <h2>
+                <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3">
+                  <span className='text-lg'>
                   Marshal - Convocation
                   </span>
                   <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -920,7 +965,7 @@ export default function Home() {
                 <h2>
                   <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3 group-hover/content:border-none group-hover/content:pb-1">
                     <span className='text-lg'>
-                      Lakehead Makes Leader: There is no&apos;I&apos; in EDI Equity, Diversity, and Inclusion
+                      Lakehead Makes Leader: There is no &apos;I&apos; in EDI Equity, Diversity, and Inclusion
                     </span>
                     <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                       Issued by Lakehead University International · April 2023
