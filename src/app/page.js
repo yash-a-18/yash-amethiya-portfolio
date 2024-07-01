@@ -94,13 +94,13 @@ export default function Home() {
                 Yash Amethiya
               </h2>
               <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-                Data Scientist
+                Data Scientist | Web Developer
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I am always on the lookout for my next challenge and eager to connect with professionals. 
               If you have any opportunities for data science you think I would be a good fit, don&apos;t hesitate to reach out.
               </p>
-              <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
+              <div className="text-5xl flex justify-center gap-4 md:gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <a href="https://www.linkedin.com/in/yash-ga" target='_blank' title='Linkedin'>
                   <AiFillLinkedin />
                 </a>
