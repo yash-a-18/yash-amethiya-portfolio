@@ -20,6 +20,8 @@ import logodark from "../../public/logo-dark2.png";
 import elsevier from "../../public/elsevier.png";
 import springer from "../../public/Springer.png";
 import useDownloader from "react-use-downloader";
+import YEP from "../../public/YEP.jpg";
+import Aurora from "../../public/Aurora.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -94,7 +96,7 @@ export default function Home() {
                 Yash Amethiya
               </h2>
               <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-                Data Scientist | Web Developer
+                Data Scientist | Software Developer
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I am always on the lookout for my next challenge and eager to connect with professionals. 
@@ -172,6 +174,16 @@ export default function Home() {
               JavaScript
               </span>
               </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Scala
+              </span>
+              </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              TypeScript
+              </span>
+              </div>
               <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                 Databases
               </h5>
@@ -193,6 +205,11 @@ export default function Home() {
               <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               SQLite3
+              </span>
+              </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              PostgreSQL
               </span>
               </div>
             </div>
@@ -236,6 +253,11 @@ export default function Home() {
               Anaconda
               </span>
               </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Sprotty
+              </span>
+              </div>
               <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
               Infrastructure & Soft Skills
               </h5>
@@ -256,10 +278,15 @@ export default function Home() {
               </div>
               <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-              Story telling
+              Docker
               </span>
               </div>
               <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Story telling
+              </span>
+              </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Leadership
               </span>
@@ -310,6 +337,11 @@ export default function Home() {
               D3 js
               </span>
               </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              ScalaJS
+              </span>
+              </div>
               <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                 Backend & Frameworks
               </h5>
@@ -338,6 +370,11 @@ export default function Home() {
               ASP.NET MVC
               </span>
               </div>
+              <div className="select-none relative inline-flex items-center justify-center p-0.5 mb-2 me-3 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              Langium
+              </span>
+              </div>
             </div>
           </div>
         </section>
@@ -359,244 +396,273 @@ export default function Home() {
             in this evolving field.
             </p>
           </div>
-          <div className="lg:flex gap-10 dark:text-white">
-            <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
-              <div width={200} height={50} className='mx-10'>
-                <Image src={Lakehead} alt="LUCS" className='object-fill h-25 w-full'/>
+          <div className="flex flex-col gap-6 dark:text-white">
+            {/* Aurora */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={Aurora} alt="Aurora" className="object-contain w-full h-auto" />
               </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 text-center ">
-                Teaching Assistant <br/> Lakehead University (Dept. of CS)
-              </h3>
-              <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                January 2024 - April 2024
-              </p>
-              <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <div className="group-hover/content:hidden  text-gray-800 dark:text-gray-400 ml-7">
-              <u><b>Gained Skills:</b></u>
-                <i><ul className="list-disc"> 
-                    <li>
-                      Programming Languages (C and C++)
-                    </li>
-                    <li>
-                      Instructional Design
-                    </li>
-                    <li>
-                      Teaching and Tutoring
-                    </li>
-                    <li>
-                      Classroom Management
-                    </li>
-                    <li>
-                      Assessment and Feedback
-                    </li>
-                    <li>
-                      Team Collaboration
-                    </li>
-                </ul></i>
-              </div>
-              <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-400 ml-7">
-                <ul className="list-disc"> 
-                    <li>
-                      Assisted in organizing and conducting C programming labs for a diverse group of 45 undergraduate students, resulting in improved understanding and application of coding concepts.
-                    </li>
-                    <li>
-                      Led C++ programming labs for approximately 70 undergrad students, offering individualized support to clarify doubts and enhance their coding abilities.
-                    </li>
-                    <li>
-                      Graded and provided feedback on lab assignments and exams for a class of 45 students, ensuring accuracy and fairness in assessment.
-                    </li>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Software Developer <br /> Aurora Constellations
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  August 2024 - Present
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Gained Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Langium</li>
+                    <li>Sprotty</li>
+                    <li>VS Code Extension Development</li>
+                    <li>Scala.js</li>
+                    <li>Frontend-Backend Integration</li>
+                    <li>DSL Syntax and Error Checking</li>
+                    <li>Healthcare Workflow Visualization</li>
+                    <li>Software Design and Architecture</li>
+                    <li>Tooling and IDE Support</li>
                   </ul>
-              </div>
-            </div>
-            <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
-              <div width={300} height={100} className='mx-10'>
-                <Image src={LakeheadIntl} alt="LUIntl" className='object-fill h-25 w-full'/>
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 text-center ">
-                Peer Mentor <br/> Lakehead University International
-              </h3>
-              <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                July 2023 - April 2024
-              </p>
-              <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <div className="group-hover/content:hidden  text-gray-800 dark:text-gray-400 ml-7">
-              <u><b>Interpersonal Skills:</b></u>
-                <i><ul className="list-disc"> 
-                    <li>
-                      Effective Communication and Supportive Mentorship
-                    </li>
-                    <li>
-                      Relationship Building and Trust Establishment
-                    </li>
-                    <li>
-                      Collaboration and Coordination with Program Coordinators
-                    </li>
-                </ul></i>
-                <u><b>Administrative Skills:</b></u>
-                <i><ul className="list-disc"> 
-                    <li>
-                      Information Management and Excel Proficiency
-                    </li>
-                    <li>
-                      Attention to Detail in Student Records and Arrangements
-                    </li>
-                </ul></i>
-              </div>
-              <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-400 ml-7">
-                <ul className="list-disc"> 
-                    <li>
-                      Mentored around 50 new international students and helped them adjust to the university
-                    </li>
-                    <li>
-                      Communicated with mentees regularly and resolved their issues
-                    </li>
-                    <li>
-                      Shared Computer Science knowledge and tips with mentees
-                    </li>
-                    <li>
-                      Provided reliable information about Lakehead University and its resources
-                    </li>
-                    <li>
-                      Recorded student data and tracked mentees&apos; progress on Excel
-                    </li>
-                    <li>
-                      Coordinated airport arrivals for incoming students in the fall
-                    </li>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Designed and implemented a Domain-Specific Language using Langium for creating structured patient medical plans.</li>
+                    <li>Developed dynamic visual diagrams for patient treatment workflows using Sprotty.</li>
+                    <li>Built a VS Code extension to integrate DSL-based language support, enabling syntax highlighting, auto-completion, and error checking.</li>
+                    <li>Integrated a Patient Tracker system and backend server directly within the VS Code extension, improving accessibility for healthcare professionals.</li>
+                    <li>Worked with Scala.js for frontend components and ensured seamless integration with the backend services.</li>
                   </ul>
-              </div>
-            </div>
-          </div>
-          <div className="lg:flex gap-10 dark:text-white">
-          <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
-              <div width={300} height={100} className='mx-10'>
-                <Image src={IPR} alt="IPR" className='object-fill h-25 w-full'/>
-              </div>
-              <h3 className="text-center text-lg font-medium pt-8 pb-2 ">
-                Research and Project Intern <br/> Institute for Plasma Research
-              </h3>
-              <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                December 2021 - April 2022
-              </p>
-              <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <div className="group-hover/content:hidden text-gray-800 dark:text-gray-400 ml-7">
-                <u><b>Technical Skills:</b></u>
-                <i><ul className="list-disc"> 
-                    <li>
-                      Deep Learning Techniques
-                    </li>
-                    <li>
-                      Transfer Learning
-                    </li>
-                    <li>
-                      TensorFlow for Object Detection
-                    </li>
-                    <li>
-                      Model Integration into Web Applications (Django Framework)
-                    </li>
-                    <li>
-                      Image Labeling (Labelimg)
-                    </li>
-                    <li>
-                      MySQL for Data Storage
-                    </li>
-                </ul></i>
-                <u><b>Soft Skills:</b></u>
-                <i><ul className="list-disc"> 
-                    <li>
-                    Leadership and Team Management
-                    </li>
-                    <li>
-                    Problem-solving and Troubleshooting
-                    </li>
-                    <li>
-                    Effective Communication of Technical Concepts
-                    </li>
-                </ul></i>
-              </div>
-              <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-400 ml-7">
-                <ul className="list-disc"> 
-                  <li>
-                    Led a team of 4 to develop a project named “Deep Learning for Object Detection in a live video feed”.
-                  </li>
-                  <li>
-                    Collected around 15000 images using web scrapping, pre-processed them and labelled them using Labelimg.
-                  </li>
-                  <li>
-                    Achieved accuracies above 95% by Transfer learning from deep neural networks like MobileNet, ResNet, Inception, and VGG for image classification and did object detection using TensorFlow.
-                  </li>
-                  <li>
-                    Integrated 4 different models into a web application using Django Framework for live object detection.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="shadow-lg shadow-gray-400 p-10 rounded-xl my-10 dark:bg-gray-800 dark:shadow-white-400 flex-1 group/content hover:scale-105 transition duration-300 ease-in-out">
-              <div width={300} height={100} className='mx-10'>
-                <Image src={Verzeo} alt="Verzeo" className='object-fill h-25 w-full'/>
-              </div>
-              <h3 className="text-lg font-medium pt-8 pb-2 text-center">
-                Machine Learning Intern <br/> Verzeo
-              </h3>
-              <p className="text-center block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                May 2020 - July 2020
-              </p>
-              <hr className="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700"></hr>
-              <div className="group-hover/content:hidden text-gray-800 dark:text-gray-400 ml-7">
-                <u><b>Python (Pandas) Skills:</b></u>
-                    <i><ul className="list-disc"> 
-                        <li>
-                          Data Manipulation
-                        </li>
-                        <li>
-                          Data Aggregation and Grouping
-                        </li>
-                        <li>
-                          Time Series Analysis
-                        </li>
-                        <li>
-                          Boolean Indexing
-                        </li>
-                  </ul></i>
-                <u><b>ML Skills:</b></u>
-                  <i><ul className="list-disc"> 
-                      <li>
-                        Algorithm Development
-                      </li>
-                      <li>
-                        Extensive Data Analysis
-                      </li>
-                      <li>
-                        Expertise in Data Visualization
-                      </li>
-                      <li>
-                        In-depth Statistical Analysis
-                      </li>
-                      <li>
-                        Real-time Predictive Model  
-                      </li>
-                      <li>
-                        Hands-on ML Application
-                      </li>
-                </ul></i>
-              </div>
-              <div className="hidden group-hover/content:block  text-gray-800 dark:text-gray-400 ml-7">
-                <ul className="list-disc"> 
-                    <li>
-                      Implemented a cutting-edge Machine Learning algorithm based on the latest research.
-                    </li>
-                    <li>
-                      Performed descriptive and inferential statistics on a large dataset of over 7400 samples.
-                    </li>
-                    <li>
-                      Explored the data using Seaborn and Matplotlib libraries to uncover hidden patterns and insights.
-                    </li>
-                    <li>
-                      Leveraged the acquired knowledge to build a car price prediction model & achieved 91.1% accuracy on real-time testing.
-                    </li>
-                  </ul>
+                </div>
               </div>
             </div>
 
+            {/* Youth Effect Program */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={YEP} alt="YEP" className="object-contain w-full h-auto" />
+              </div>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Software Developer <br /> Aurora Constellations, Youth Effect Program by Northwestern Ontario Innovation Centre
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  July 2024 - August 2024
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Gained Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>ZIO</li>
+                    <li>PostgreSQL</li>
+                    <li>Docker</li>
+                    <li>REST API Development</li>
+                    <li>Unit Testing</li>
+                    <li>Postman API Testing</li>
+                    <li>Code Reviews</li>
+                    <li>Technical Documentation</li>
+                    <li>Team Collaboration</li>
+                  </ul>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Optimized patient data retrieval by upgrading the patient tracking system using ZIO, reducing response time by 30%.</li>
+                    <li>Designed and deployed a scalable PostgreSQL database schema in Docker, improving data consistency and maintainability.</li>
+                    <li>Implemented REST API endpoints using Tapir, enabling seamless communication between the frontend and backend.</li>
+                    <li>Enhanced code reliability and API stability by writing unit tests and rigorously testing endpoints with Postman, ensuring a bug-free deployment.</li>
+                    <li>Collaborated with senior developers in code reviews, improving code quality and aligning with industry best practices.</li>
+                    <li>Successfully completed the Youth Effect Program, contributing to real-world software solutions and expanding technical expertise.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Research Graduate */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={Lakehead} alt="ResearchGraduate" className="object-contain w-full h-auto" />
+              </div>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Research Graduate <br /> Lakehead University
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  September 2023 - April 2024
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Gained Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Research</li>
+                    <li>Publication & Academic Writing</li>
+                    <li>Computer Visiong</li>
+                    <li>PyTorch</li>
+                    <li>Data Science & Analysis</li>
+                  </ul>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Published a comprehensive method utilizing a Region-Based Convolutional Neural Network (RCNN) with VGG19 to achieve a ~93% detection accuracy in PDF pages, while deploying smart pre-processing techniques like Smudging.</li>
+                    <li>Fine-tuned a split-and-merge technique for table structure recognition, yielding a weighted average F1 score of 52.3%, surpassing SOTA CascadeTabNet&apos;s score of 23.2%, ensuring generalizability across diverse document sets.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Teaching Assistant */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={Lakehead} alt="LUCS" className="object-contain w-full h-auto" />
+              </div>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Teaching Assistant <br /> Lakehead University (Dept. of CS)
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  January 2024 - April 2024
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Gained Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Programming Languages (C and C++)</li>
+                    <li>Instructional Design</li>
+                    <li>Teaching and Tutoring</li>
+                    <li>Classroom Management</li>
+                    <li>Assessment and Feedback</li>
+                    <li>Team Collaboration</li>
+                  </ul>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Assisted in organizing and conducting C programming labs for a diverse group of 45 undergraduate students, resulting in improved understanding and application of coding concepts.</li>
+                    <li>Led C++ programming labs for approximately 70 undergrad students, offering individualized support to clarify doubts and enhance their coding abilities.</li>
+                    <li>Graded and provided feedback on lab assignments and exams for a class of 45 students, ensuring accuracy and fairness in assessment.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Peer Mentor */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={LakeheadIntl} alt="LUIntl" className="object-contain w-full h-auto" />
+              </div>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Peer Mentor <br /> Lakehead University International
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  July 2023 - April 2024
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Interpersonal Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Effective Communication & Supportive Mentorship</li>
+                    <li>Relationship Building & Trust Establishment</li>
+                    <li>Collaboration with Program Coordinators</li>
+                  </ul>
+                  <u><b>Administrative Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Information Management & Excel Proficiency</li>
+                    <li>Attention to Detail in Student Records</li>
+                  </ul>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Mentored around 50 new international students and helped them adjust to the university</li>
+                    <li>Communicated with mentees regularly and resolved their issues</li>
+                    <li>Shared Computer Science knowledge and tips with mentees</li>
+                    <li>Provided reliable information about Lakehead University and its resources</li>
+                    <li>Recorded student data and tracked mentees&apos; progress on Excel</li>
+                    <li>Coordinated airport arrivals for incoming students in the fall</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Intern IPR */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={IPR} alt="IPR" className="object-contain w-full h-auto" />
+              </div>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Research and Project Intern <br /> Institute for Plasma Research
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  December 2021 - April 2022
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Technical Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Deep Learning Techniques</li>
+                    <li>Transfer Learning</li>
+                    <li>TensorFlow for Object Detection</li>
+                    <li>Model Integration into Web Applications (Django Framework)</li>
+                    <li>Image Labeling (Labelimg)</li>
+                    <li>MySQL for Data Storage</li>
+                  </ul>
+                  <u><b>Soft Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Leadership and Team Management</li>
+                    <li>Problem-solving and Troubleshooting</li>
+                    <li>Effective Communication of Technical Concepts</li>
+                  </ul>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Led a team of 4 to develop a project named “Deep Learning for Object Detection in a live video feed”.</li>
+                    <li>Collected around 15000 images using web scrapping, pre-processed them and labelled them using Labelimg.</li>
+                    <li>Achieved accuracies above 95% by Transfer learning from deep neural networks like MobileNet, ResNet, Inception, and VGG for image classification and did object detection using TensorFlow.</li>
+                    <li>Integrated 4 different models into a web application using Django Framework for live object detection.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Intern Verzeo */}
+            <div className="flex flex-col lg:flex-row items-center lg:items-start shadow-lg shadow-gray-400 p-6 rounded-xl my-4 dark:bg-gray-800 dark:shadow-white-400 group/content hover:scale-105 transition duration-300 ease-in-out">
+              <div className="w-24 h-auto flex-shrink-0">
+                <Image src={Verzeo} alt="Verzeo" className="object-contain w-full h-auto" />
+              </div>
+              <div className="lg:ml-6 w-full">
+                <h3 className="text-lg font-medium pb-2 text-center lg:text-left">
+                  Machine Learning Intern <br /> Verzeo
+                </h3>
+                <p className="text-center lg:text-left text-sm text-gray-400 dark:text-gray-300">
+                  May 2020 - July 2020
+                </p>
+                <hr className="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className="hidden group-hover/content:block text-gray-800 dark:text-gray-300">
+                  <u><b>Python (Pandas) Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Data Manipulation</li>
+                    <li>Data Aggregation and Grouping</li>
+                    <li>Time Series Analysis</li>
+                    <li>Boolean Indexing</li>
+                  </ul>
+                  <u><b>ML Skills:</b></u>
+                  <ul className="list-disc ml-4">
+                    <li>Algorithm Development</li>
+                    <li>Extensive Data Analysis</li>
+                    <li>Expertise in Data Visualization</li>
+                    <li>In-depth Statistical Analysis</li>
+                    <li>Real-time Predictive Model  </li>
+                    <li>Hands-on ML Application</li>
+                  </ul>
+                </div>
+                <div className="group-hover/content:hidden text-gray-800 dark:text-gray-300">
+                  <ul className="list-disc ml-4">
+                    <li>Implemented a cutting-edge Machine Learning algorithm based on the latest research.</li>
+                    <li>Performed descriptive and inferential statistics on a large dataset of over 7400 samples.</li>
+                    <li>Explored the data using Seaborn and Matplotlib libraries to uncover hidden patterns and insights.</li>
+                    <li>Leveraged the acquired knowledge to build a car price prediction model & achieved 91.1% accuracy on real-time testing.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -899,6 +965,21 @@ export default function Home() {
           </div>
           <div className='py-5'>
             <div className="bg-white dark:bg-gray-900 dark:text-white">
+              <h2>
+                <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3">
+                  <span className='text-lg'>
+                  Operations Manager & Director of Volunteers
+                  </span>
+                  <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  TEDxLakeheadU · January 2025 - March 2025
+                  </p>
+                  <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  I led the coordination and management of event operations, ensuring seamless execution of all activities. I oversaw the recruitment, training, and management of a dedicated volunteer team, fostering a collaborative environment to support event success.
+                  <br/>My responsibilities also included streamlining logistical processes, managing timelines, and collaborating with various teams to deliver a high-quality experience for both speakers and attendees.
+                  <br/>This role honed my leadership, organizational, and communication skills while delivering an impactful event that adhered to TEDx&apos;s high standards. 
+                  </p>
+                </div>
+              </h2>
               <h2>
                 <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3">
                   <span className='text-lg'>
