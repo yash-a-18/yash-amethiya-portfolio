@@ -58,8 +58,11 @@ export default function Home() {
                 <a href="#Certificates" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
                   Certificates
                 </a>
-                <a href="#Volunteering" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 ">
+                <a href="#Volunteering" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 mr-4">
                   Volunteering
+                </a>
+                <a href="#Honours & Awards" className="block text-lg mt-4 lg:inline-block lg:mt-0 dark:text-teal-200 ">
+                  Awards
                 </a>
               </div> 
             </div>
@@ -832,8 +835,11 @@ export default function Home() {
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
                   April 2024
                 </p>
-                <a href="#" className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Accepted
+                <a href="https://link.springer.com/chapter/10.1007/978-981-96-0143-1_7" target='_blank' className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Read more
+                  <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -967,8 +973,11 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-900 dark:text-white">
               <h2>
                 <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3">
-                  <span className='text-lg'>
+                  <span className='text-lg flex flex-row'>
                   Operations Manager & Director of Volunteers
+                    <a className='mt-1 mx-2' href='https://www.tedxlakeheadu.com/team/yash-amethiya' target='_blank'>
+                      <FiExternalLink />
+                    </a>
                   </span>
                   <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   TEDxLakeheadU · January 2025 - March 2025
@@ -1042,6 +1051,27 @@ export default function Home() {
           </div>
           <div className='py-5'>
             <div className="bg-white dark:bg-gray-900 dark:text-white">
+              <div className='group/content'>
+                <h2>
+                  <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3 group-hover/content:border-none group-hover/content:pb-1">
+                    <span className='text-lg'>
+                      Best Paper Award, FICTA-2024 Conference
+                    </span>
+                    <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                      Issued by London Metropolitan University, UK & Springer · June 2024
+                    </p>
+                  </div>
+                </h2>
+                <div className="hidden group-hover/content:block">
+                  <div className="py-5 border-b border-gray-200 dark:border-gray-700">
+                    <p className="mb-2 text-gray-500 dark:text-gray-400">
+                      Based on the technical merit of the papers as well as performance during the presentation session.
+                      Presented at 12th International Conference on Frontiers of Intelligent Computing: Theory and Applications (FICTA-2024), 
+                      Organized By AI and Data Science (AI & DS) Research Group, London Metropolitan University, London, United Kingdom
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div className='group/content'>
                 <h2>
                   <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3 group-hover/content:border-none group-hover/content:pb-1">
