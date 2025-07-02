@@ -72,7 +72,7 @@ export const experiences = [
         ],
         job: [
             'Published a comprehensive method utilizing a Region-Based Convolutional Neural Network (RCNN) with VGG19 to achieve a ~93% detection accuracy in PDF pages, while deploying smart pre-processing techniques like Smudging.',
-            'Fine-tuned a split-and-merge technique for table structure recognition, yielding a weighted average F1 score of 52.3%, surpassing SOTA CascadeTabNet&apos;s score of 23.2%, ensuring generalizability across diverse document sets.'
+            'Fine-tuned a split-and-merge technique for table structure recognition, yielding a weighted average F1 score of 52.3%, surpassing SOTA CascadeTabNet\'s score of 23.2%, ensuring generalizability across diverse document sets.'
         ]
     },
     {
@@ -113,7 +113,7 @@ export const experiences = [
             'Communicated with mentees regularly and resolved their issues',
             'Shared Computer Science knowledge and tips with mentees',
             'Provided reliable information about Lakehead University and its resources',
-            'Recorded student data and tracked mentees&apos; progress on Excel',
+            'Recorded student data and tracked mentees\' progress on Excel',
             'Coordinated airport arrivals for incoming students in the fall'
         ]
     },
