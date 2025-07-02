@@ -13,13 +13,12 @@ import Image from "next/image";
 import mypic from "../../public/Profile-new-1.png";
 import logo from "../../public/Logo-2.png";
 import logodark from "../../public/logo-dark2.png";
-import elsevier from "../../public/elsevier.png";
-import springer from "../../public/Springer.png";
 import useDownloader from "react-use-downloader";
 import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
 import ProjectSection from './components/ProjectSection';
 import AwardsSection from './components/AwardsSection';
+import PublicationSection from './components/PublicationSection';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -175,63 +174,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Publications</h3>
           </div>
-          <div className='py-5'>
-            <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-              <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
-                <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden p-5" >
-                  <Image src={springer} alt="Elsevier"/>
-                </div>
-              </a>
-              <div className="p-5">
-                <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Automatic Table Detection and Tabular Data Extraction from Scanned Documents
-                  </h5>
-                </a>
-                <p className="font-normal text-gray-700 dark:text-gray-400">
-                  Publication: Springer, Journal: Springer-Smart Innovation, Systems and Technologies (SIST)
-                </p>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  April 2024
-                </p>
-                <a href="https://link.springer.com/chapter/10.1007/978-981-96-0143-1_7" target='_blank' className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Read more
-                  <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className='py-5'>
-            <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-              <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
-                <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden p-5" >
-                  <Image src={elsevier} alt="Elsevier"/>
-                </div>
-              </a>
-              <div className="p-5">
-                <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank'>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Comparative analysis of breast cancer detection using machine learning and biosensors
-                  </h5>
-                </a>
-                <p className="font-normal text-gray-700 dark:text-gray-400">
-                  Publication: Elsevier, Journal: Intelligent Medicine
-                </p>
-                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                  October 2022
-                </p>
-                <a href="https://www.sciencedirect.com/science/article/pii/S2667102621000887" target='_blank' className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Read more
-                  <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+          <PublicationSection />
         </section>
 
         <section className="py-10" id="Certificates">
