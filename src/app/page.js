@@ -19,6 +19,7 @@ import useDownloader from "react-use-downloader";
 import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
 import ProjectSection from './components/ProjectSection';
+import AwardsSection from './components/AwardsSection';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -409,71 +410,7 @@ export default function Home() {
           </div>
           <div className='py-5'>
             <div className="bg-white dark:bg-gray-900 dark:text-white">
-              <div className='group/content'>
-                <h2>
-                  <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3 group-hover/content:border-none group-hover/content:pb-1">
-                    <span className='text-lg'>
-                      Best Paper Award, FICTA-2024 Conference
-                    </span>
-                    <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Issued by London Metropolitan University, UK & Springer · June 2024
-                    </p>
-                  </div>
-                </h2>
-                <div className="hidden group-hover/content:block">
-                  <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                    <p className="mb-2 text-gray-500 dark:text-gray-400">
-                      Based on the technical merit of the papers as well as performance during the presentation session.
-                      Presented at 12th International Conference on Frontiers of Intelligent Computing: Theory and Applications (FICTA-2024), 
-                      Organized By AI and Data Science (AI & DS) Research Group, London Metropolitan University, London, United Kingdom
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='group/content'>
-                <h2>
-                  <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:text-white gap-3 group-hover/content:border-none group-hover/content:pb-1">
-                    <span className='text-lg'>
-                      Lakehead Makes Leader: There is no &apos;I&apos; in EDI Equity, Diversity, and Inclusion
-                    </span>
-                    <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Issued by Lakehead University International · April 2023
-                    </p>
-                  </div>
-                </h2>
-                <div className="hidden group-hover/content:block">
-                  <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                    <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    It promotes diverse teamwork and cultural competency through EDI-focused projects. 
-                    It emphasizes the importance of equity, diversity, and inclusion. 
-                    Participants gain skills in interpersonal and cultural intelligence, conflict resolution, and cross-cultural collaboration. 
-                    This module offers a unique opportunity to celebrate diversity and enhance collaboration in a global workplace
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='group/content'>
-                <h2>
-                  <div className="flex flex-col justify-between w-full py-5 font-medium border-b border-gray-200 dark:border-gray-700 dark:white gap-3 group-hover/content:border-none group-hover/content:pb-1">
-                    <span className='text-lg'>Lakehead Makes Leaders: Think Like a Leader</span>
-                    <p className="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Issued by Lakehead University International · November 2022
-                    </p>
-                  </div>
-                </h2>
-                <div className="hidden group-hover/content:block">
-                  <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-                    <p className="mb-2 text-gray-500 dark:text-gray-400">
-                    I focused on developing leadership skills essential for my future Canadian career pursuits. 
-                    I learned about different leadership styles and explored my strengths. 
-                    I engaged in various activities that taught me how to manage uncertainty, 
-                    sharpened my critical thinking and problem-solving skills, 
-                    and deepened my self-awareness and values to foster change and innovation. 
-                    After completing that module, I was well on my way to becoming a Lakehead Leader, 
-                    with the ability to make meaningful and impactful changes for others.</p>
-                  </div>
-                </div>
-              </div>
+              <AwardsSection />
             </div>
           </div>
         </section>
