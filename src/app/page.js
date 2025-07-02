@@ -18,6 +18,7 @@ import springer from "../../public/Springer.png";
 import useDownloader from "react-use-downloader";
 import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
+import ProjectSection from './components/ProjectSection';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -164,139 +165,7 @@ export default function Home() {
           </div>
           <div className='py-5'>
             <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
-                <li className="mb-10 ml-6">            
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
-                    </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                      Medical Image Captioning on Chest X-Rays 
-                      <a className='mx-2' href='https://github.com/yash-a-18/Medical-Image-Captioning-for-Chest-X-Rays' target='_blank'>
-                        <AiFillGithub />
-                      </a>
-                      <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3 select-none">
-                        Latest
-                      </span>
-                    </h3>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Skills: Python, Long Short-Term Memory (LSTM), CheXNET Model
-                    </p>
-                    <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                    Extracted the information from Indiana University&apos;s dataset, consisting of almost 7500 images and 4000 reports.
-                    <br/>Organized the unbalanced by performing data pre-processing tasks like up-sampling and down-sampling.
-                    <br/>Captured the semantic meaning & relationship between the words by using GloVe vectors with 300 dimensions.
-                    <br/>Fine-tuned the CheXNET Model for encoding and achieved around 90% accuracy and a loss of less than 0.01.
-                    </p>
-                    
-                </li>
-                <li className="mb-10 ml-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
-                    </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                      Video Game Sales Dashboard
-                      <a className='mx-2' href='https://github.com/yash-a-18/Video-Games-Sales-Dashboard' target='_blank'>
-                        <AiFillGithub />
-                      </a>
-                    </h3>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Skills: Data Cleaning, Tableau
-                    </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Worked on the Video Game Sales dataset from Kaggle which includes 10 attributes and more than 16000 samples.
-                    <br/>Devised an interactive Dashboard on Tableau to find the insights and relationship between the genre, year and sales.
-                    </p>
-                </li>
-                <li className="mb-10 ml-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
-                    </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                      Currency Recognizer
-                      <a className='mx-2' href='https://github.com/yash-a-18/Curreny-Recognizer' target='_blank'>
-                        <AiFillGithub />
-                      </a>
-                    </h3>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Skills: Research, Computer Vision, Scale-Invariant Feature Transform (SIFT), Python, MobileNet, Data Collection
-                    </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Collaborated on a project to replicate and enhance a research paper.
-                    <br/>Developed a fine-grained currency recognizer for the visually impaired using CONGAS and SIFT-based features.
-                    <br/>Engineered a system with exceptional precision and recall, employing a lightweight coarse classifier and fine-grained recognition.
-                    <br/>Led the creation of a diverse dataset (300 images per US banknote) with varied conditions for robust model training and evaluation.
-                    <br/>Implemented a pre-filtering classifier and utilized SIFT features to optimize recognition accuracy for visually impaired users.
-                    </p>
-                </li>
-                <li className="mb-10 ml-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
-                    </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                      Qualitative Bankruptcy Classification
-                      <a className='mx-2' href='https://github.com/yash-a-18/MultilayerPerceptron-Qualitative_Bankruptcy-classification' target='_blank'>
-                        <AiFillGithub />
-                      </a>
-                    </h3>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Skills: Analysis, Python, Multi Layer Perceptron
-                    </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Developed a Multilayer Perceptron (MLP) from scratch, incorporating Backpropagation and Stochastic Gradient Descent with Momentum (SDGM) algorithms.
-                    <br/>Attained a successful learning curve, demonstrating effective model training and optimization.
-                    <br/>Utilized parameters referenced from the paper &apos;The Discovery of Experts&apos; Decision Rules from Qualitative Bankruptcy Data Using Genetic Algorithms&apos; by Myoung-Jong Kim and Ingoo Han for an existing dataset.
-                    </p>
-                </li>
-                <li className="mb-10 ml-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
-                    </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                      Half Adder Circuit Design using Perceptron
-                      <a className='mx-2' href='https://github.com/yash-a-18/Half-Adder-Design-using-Perceptron' target='_blank'>
-                        <AiFillGithub />
-                      </a>
-                    </h3>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Skills: Logic Gates, Python, Feed Forward Perceptron
-                    </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Designed a Half Adder circuit using a Feedforward Perceptron, showcasing practical implementation skills in neural network architectures.
-                    <br/>Employed the Unit Step function as an Activation Function within the circuit design, demonstrating familiarity with various activation functions.
-                    <br/>Developed AND and NOT logic gates, subsequently constructing a NAND Gate, highlighting expertise in logic gate implementations and circuit design.
-                    </p>
-                </li>
-                <li className="ml-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                        <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                        </svg>
-                    </span>
-                    <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                      Online Vehicle Renting System
-                      <a className='mx-2' href='https://github.com/yash-a-18/OnlineVehicleRentingSystem' target='_blank'>
-                        <AiFillGithub />
-                      </a>
-                    </h3>
-                    <p className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                      Skills: Bootstrap, Django Framework, Python, Jinja3, SQLite3
-                    </p>
-                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                    Designed and developed a web system using Django Framework for online vehicle booking/renting.
-                    <br/>Accelerated the performance with optimized programming & reduced system failure metrics for parallel requests.
-                    <br/>Fashioned the user interface using Bootstraps and CSS for easy single-button click navigation.
-                    <br/>Operated and loaded the live user, vehicle and rent request data using Jinja.
-                    </p>
-                </li>
+                <ProjectSection />
             </ol>
           </div>
         </section>
