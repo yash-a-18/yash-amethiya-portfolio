@@ -4,12 +4,12 @@ import { skills } from '../data/skills';
 
 const groupedSkills = [
   {
-    title: 'Languages & Databases',
-    categories: ['Programming Languages', 'Databases'],
+    title: 'Languages, Databases & Infrastructure',
+    categories: ['Programming Languages', 'Databases', 'Infrastructure & Soft Skills'],
   },
   {
-    title: 'Data Science & Infrastructure',
-    categories: ['Data Science & Tools', 'Infrastructure & Soft Skills'],
+    title: 'Data Science & Research',
+    categories: ['Data Science & Tools', 'Research & Health Data'],
   },
   {
     title: 'Frontend & Backend',

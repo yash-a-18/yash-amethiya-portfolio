@@ -10,7 +10,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        // Background of the alternating (tinted) section bands
+        band: {
+          DEFAULT: '#f1f5f9',
+          dark: '#172030',
+        },
+      },
+    },
   },
   plugins: [],
 }

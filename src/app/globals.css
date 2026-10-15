@@ -5,6 +5,13 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* clip (not hidden) so the sticky header keeps working */
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* keep section headings clear of the sticky header */
+  scroll-padding-top: 5rem;
 }
 
