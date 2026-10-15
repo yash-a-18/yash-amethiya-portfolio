@@ -4,17 +4,83 @@ import LakeheadIntl from "../../../public/LakeheadIntl.png";
 import Lakehead from "../../../public/LakeheadCS.png";
 import IPR from "../../../public/IPR.png";
 import Verzeo from "../../../public/Verzeo.png";
+import PathwAI from "../../../public/PathwAI.png";
+import Epsilon from "../../../public/Epsilon.png";
+import ONCAT from "../../../public/ONCAT.png";
+import ArcandCentre from "../../../public/ArcandCentre-mark.svg";
+import NOSM from "../../../public/NOSM.png";
+import YorkU from "../../../public/YorkU.jpg";
+
+// category: "research" | "professional" | "teaching" decides which section a card appears in.
 
 export const experiences = [
     {
+        image: PathwAI,
+        alt: 'PathwAI',
+        category: 'professional',
+        title: 'Software Engineer',
+        company: 'PathwAI',
+        link: 'https://pathwai.ontransfer.ca/',
+        partners: [
+            { label: 'Developed by', image: Epsilon, alt: 'Epsilon Data Intelligence' },
+            { label: 'Funded by', image: ONCAT, alt: 'ONCAT' }
+        ],
+        date: 'May 2026 - Present',
+        gained_skills: [
+            'Laravel & PHP',
+            'NLP Model Integration (Universal Sentence Encoder, ALBERT, RoBERTa)',
+            'LLM-based Document Parsing (Phi-3.5 mini)',
+            'Server-side Report Generation (Excel)',
+            'Database Migrations & Data Cleaning',
+            'Role-based Admin Features',
+            'Tailwind CSS'
+        ],
+        job: [
+            'Build features for PathwAI, an AI platform developed by Epsilon Data Intelligence and funded by ONCAT that compares course learning outcomes between Ontario institutions to support credit transfer.',
+            'Designed a preliminary comparison workflow that surfaces the top 5 matching learning outcomes across all sending courses.',
+            'Added Excel export for PathwAI, detailed and 1:1 comparison reports, generated on the server without external spreadsheet libraries.',
+            'Added program duplication, comparison deletion with user-activity logging, and admin-only views of who ran each comparison.',
+            'Wrote migrations and seeders to merge duplicate institutions and streamlined the new-program entry flow.'
+        ]
+    },
+    {
+        image: ArcandCentre,
+        alt: 'Dr. Gilles Arcand Centre for Health Equity',
+        category: 'professional',
+        title: 'Software Developer',
+        company: 'Dr. Gilles Arcand Centre for Health Equity',
+        partners: [
+            { label: 'Part of', image: NOSM, alt: 'NOSM University' }
+        ],
+        date: 'January 2026 - Present',
+        gained_skills: [
+            'Scala 3 & ZIO',
+            'Laminar & Scala.js',
+            'Neo4j & PostgreSQL/PostGIS',
+            'MapLibre & Cytoscape.js',
+            'ORCID API',
+            'Next.js & Force-directed Graphs',
+            'Software Architecture'
+        ],
+        job: [
+            'Developing ARCAND Map, the Arcand Centre Network Map: a directory of researchers with profiles, a geographic map and a collaboration graph showing how health equity researchers across Northern Ontario work together.',
+            'Designed the platform architecture: a Scala 3 / ZIO modular backend, a Laminar + Scala.js frontend, PostgreSQL/PostGIS and Neo4j storage, MapLibre maps, Cytoscape.js graphs and shared typed API contracts.',
+            'Planned data stewardship flows for importing, validating, reviewing and approving researcher data, with role-based visibility.',
+            'Prototyped the network visualization in Next.js with a force-directed collaboration graph built from researchers\' ORCID publications and funding.'
+        ]
+    },
+    {
         image: Aurora,
         alt: 'Aurora',
+        category: 'professional',
         title: 'Software Developer',
         company: 'Aurora Constellations',
+        link: 'https://www.aurorac.ca/',
         date: 'August 2024 - Present',
         gained_skills: [
             'Langium',
             'Sprotty',
+            'D3.js',
             'VS Code Extension Development',
             'Scala.js',
             'Frontend-Backend Integration',
@@ -28,12 +94,32 @@ export const experiences = [
             'Developed dynamic visual diagrams for patient treatment workflows using Sprotty.',
             'Built a VS Code extension to integrate DSL-based language support, enabling syntax highlighting, auto-completion, and error checking.',
             'Integrated a Patient Tracker system and backend server directly within the VS Code extension, improving accessibility for healthcare professionals.',
-            'Worked with Scala.js for frontend components and ensured seamless integration with the backend services.'
+            'Worked with Scala.js for frontend components and ensured seamless integration with the backend services.',
+            'Building an end-user mode of the extension for clinicians, with a patient list that redraws treatment diagrams on patient switch and theme-aware patient tracker views.',
+            'Rebuilding the treatment workflow diagrams with D3, adding zoom and fit, a legend, tooltips, replay and recording controls.'
+        ]
+    },
+    {
+        image: YorkU,
+        alt: 'York University',
+        category: 'teaching',
+        title: 'Marker/Grader',
+        company: 'School of Health Policy and Management, York University',
+        date: 'September 2026 - Present',
+        gained_skills: [
+            'Health Informatics',
+            'Assessment and Feedback',
+            'Teaching Support'
+        ],
+        job: [
+            'Marker for HLST 2040 A - Introduction to Health Informatics, a course of approximately 70 students.',
+            'Mark assignments and exams and provide written feedback to students.'
         ]
     },
     {
         image: YEP,
         alt: 'YEP',
+        category: 'professional',
         title: 'Software Developer',
         company: 'Aurora Constellations, Youth Effect Program by Northwestern Ontario Innovation Centre',
         date: 'July 2024 - August 2024',
@@ -60,6 +146,7 @@ export const experiences = [
     {
         image: Lakehead,
         alt: 'ResearchGraduate',
+        category: 'research',
         title: 'Research Graduate',
         company: 'Lakehead University',
         date: 'September 2023 - April 2024',
@@ -78,6 +165,7 @@ export const experiences = [
     {
         image: Lakehead,
         alt: 'LUCS',
+        category: 'teaching',
         title: 'Teaching Assistant',
         company: 'Lakehead University (Dept. of CS)',
         date: 'January 2024 - April 2024',
@@ -98,6 +186,7 @@ export const experiences = [
     {
         image: LakeheadIntl,
         alt: 'LUIntl',
+        category: 'teaching',
         title: 'Peer Mentor',
         company: 'Lakehead University International',
         date: 'July 2023 - April 2024',
@@ -120,6 +209,7 @@ export const experiences = [
     {
         image: IPR,
         alt: 'IPR',
+        category: 'research',
         title: 'Research and Project Intern',
         company: 'Institute for Plasma Research',
         date: 'December 2021 - April 2022',
@@ -144,6 +234,7 @@ export const experiences = [
     {
         image: Verzeo,
         alt: 'Verzeo',
+        category: 'professional',
         title: 'Machine Learning Intern',
         company: 'Verzeo',
         date: 'May 2020 - July 2020',

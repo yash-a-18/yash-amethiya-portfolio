@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'Yash Amethiya Portfolio',
-  description: 'Created by Yash Amethiya',
+  description: 'Yash Amethiya: PhD student in Health at York University and software engineer building health and education technology.',
 }
 
 export default function RootLayout({ children }) {

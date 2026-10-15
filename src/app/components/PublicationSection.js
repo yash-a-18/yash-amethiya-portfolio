@@ -5,7 +5,7 @@ export default function PublicationSection() {
     return (
         publications.map((publication) => (
             <div key={publication.title} className='py-5'>
-                <div className="max-w-sm w-full lg:max-w-full lg:flex border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div className="max-w-sm w-full lg:max-w-full lg:flex bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <a href={publication.link} target='_blank'>
                         <div className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l overflow-hidden p-5" >
                             <Image src={publication.image} alt={publication.alt} />
@@ -17,6 +17,9 @@ export default function PublicationSection() {
                                 {publication.title}
                             </h5>
                         </a>
+                        <p className="font-normal text-gray-700 dark:text-gray-300">
+                            {publication.authors}
+                        </p>
                         <p className="font-normal text-gray-700 dark:text-gray-400">
                             Publication: {publication.publisher}, Journal: {publication.journal}
                         </p>
